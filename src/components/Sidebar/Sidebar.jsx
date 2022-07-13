@@ -35,7 +35,7 @@ const Sidebar = () => {
               )
             })}
             
-            <div className='switchOff'>
+            <div className='switchOff '>
             <UilSignOutAlt></UilSignOutAlt>
             </div>
 

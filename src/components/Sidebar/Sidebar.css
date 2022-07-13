@@ -68,11 +68,11 @@
     bottom: 0;
     margin-left: 5rem;
     cursor: pointer;
-    color: red;
-   
-    
-    
+    color: black;
 
+}
+.switchOff:active{
+    color: red;
 }
 
 

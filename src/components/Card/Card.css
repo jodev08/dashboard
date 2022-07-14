@@ -1,11 +1,45 @@
-.Cards{
-    
-    gap:10px;
-    display: flex;
-    
+.CompactCard{
+  display: flex;
+  flex:1;
+  height: 7rem!important;
+  border-radius: 0.7rem;
+  color: black;
+  position: relative;
+  cursor:pointer;
+  padding: 1rem;
 
 }
-.parentContainer{
-    width: 100%;
-    
+
+.CompactCard:hover{
+  box-shadow: none !important;
+}
+
+.radicalBar{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+
+
+.detail{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  
+}
+
+.detail>span:nth-child(2){
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.detail>span:nth-child(3){
+  font-size:12px ;
 }

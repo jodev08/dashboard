@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Card.css';
-//import { AnimateSharedLayout} from 'farmer-motion';
+import {motion, AnimateSharedLayout} from 'framer-motion';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Chart from 'react-apexcharts';
@@ -15,7 +15,7 @@ const Card = (props) => {
     const[expanded, setExpanded] = useState(false)
   
     return (
-            <div>
+            <AnimateSharedLayout>
                 {
                     expanded?(
                         <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>
@@ -24,29 +24,25 @@ const Card = (props) => {
                 <CompactCard param = {props} setExpanded={() => setExpanded(true)}  />
 
                 )}
-                </div>
+            </AnimateSharedLayout>
             
-                
-            
-
-
-           
-        
-   
-  )
-}
+      
+  );
+};
  //CompactCard
 
 function CompactCard({param , setExpanded}){
     const Png = param.png;
     return(
-        <div className='CompactCard'
+        <motion.div 
+            className='CompactCard'
             style={{
                 backGround : param.color.background,
-                boxShadow: param.color.boxShadow
+                boxShadow: param.color.boxShadow,
 
             }}
             onClick={setExpanded}
+            layoutId='expandableCard'
             >
             
             <div className="radicalBar">
@@ -63,7 +59,7 @@ function CompactCard({param , setExpanded}){
                <span>Last 24 hours</span>
                
             </div>
-        </div>
+        </motion.div>
     )
 }
 
@@ -129,16 +125,18 @@ function ExpandedCard({param, setExpanded}) {
         }
     }
     return(
-        <div
+        <motion.div
            className='ExpandedCard'
            style={{
             background: param.color.backGround,
             boxShadow: param.color.boxShadow,
-           }
-           }
+           }}
+           layoutId='expandableCard'
            >
-            <div>
+            <div style={{alignSefl: 'flex-end', cursor: 'pointer',color: 'white'}} >
                 <UilTimes onClick={setExpanded}/>
+
+                
 
             </div>
             <span>{param.title}</span>
@@ -151,7 +149,7 @@ function ExpandedCard({param, setExpanded}) {
           
           
           
-           </div>
+           </motion.div>
 
            
     )

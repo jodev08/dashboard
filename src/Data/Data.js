@@ -15,23 +15,23 @@ import img3 from "../img/elon.jpg";
 export const SideBarData = [
   {
     icon: UilEstate,
-    heading: "Dashboard",
+    heading: "Tableau ",
   },
   {
     icon: UilClipboardAlt,
-    heading: "Orders",
+    heading: "Contrats",
   },
   {
     icon: UilUsersAlt,
-    heading: "Customers",
+    heading: "Clients",
   },
   {
     icon: UilPackage,
-    heading: "Products",
+    heading: "Produits",
   },
   {
     icon: UilChart,
-    heading: "Analytics",
+    heading: "Analytique",
   },
 ];
 

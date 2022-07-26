@@ -24,4 +24,8 @@ border-radius: 4rem;
     gap: 0.5rem;
 }
 
+.updateName{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
 

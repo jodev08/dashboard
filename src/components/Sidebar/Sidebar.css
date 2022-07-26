@@ -58,7 +58,7 @@
 
 .navigationItem:hover{
     cursor:pointer;
-    background: var(--orange);
+    background: brown;
     margin-left: 0;
     border-radius: 1rem;
 }

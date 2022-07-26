@@ -9,14 +9,18 @@ const Updates = () => {
         return (
           <div className="update">
            
-             
               <img src={update.img}/>
+              <div className='noti'>
+              <div style={{marginBottom: '0.5rem'}}>
+                <div className='updateName'>
+                  <span>{update.name}</span>
+                </div>
+                <span>{update.notification}</span>
+              </div>
               
               
-              <span>{update.name}</span>
-              <span>{update.notification}</span>
               <span>{update.time}</span>
-            
+            </div>
           </div>
         );
       })}

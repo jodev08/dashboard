@@ -8,6 +8,10 @@ import {
   UilMoneyWithdrawal,
 } from "@iconscout/react-unicons";
 
+import img1 from "../img/bill.jpg";
+import img2 from "../img/barack.jpg";
+import img3 from "../img/elon.jpg";
+
 export const SideBarData = [
   {
     icon: UilEstate,
@@ -80,5 +84,27 @@ export const CardsData = [
         data: [10, 25, 15, 30, 12, 15, 20],
       },
     ],
+  },
+];
+
+export const UpdatesData = [
+  {
+    img: img1,
+    name: "jojo",
+    notification: "problème dans le planning",
+    time: "il y a 15 min",
+  },
+
+  {
+    img: img2,
+    name: "Marc",
+    notification: "client pas sur la bce",
+    time: "il y a 4 jours",
+  },
+  {
+    img: img3,
+    name: "Paul",
+    notification: "signature client",
+    time: "il y a 1 jours",
   },
 ];

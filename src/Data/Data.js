@@ -12,13 +12,14 @@ import img1 from "../img/bill.jpg";
 import img2 from "../img/barack.jpg";
 import img3 from "../img/elon.jpg";
 
-export const SideBarData = [
+/*export const SideBarData = [
   {
     icon: UilEstate,
     heading: "Tableau ",
   },
   {
     icon: UilClipboardAlt,
+
     heading: "Contrats",
   },
   {
@@ -29,12 +30,13 @@ export const SideBarData = [
     icon: UilPackage,
     heading: "Produits",
   },
+
   {
     icon: UilChart,
     heading: "Analytique",
   },
 ];
-
+*/
 export const CardsData = [
   {
     title: "Sales",
